@@ -10,7 +10,7 @@ def create_app():
     load_dotenv() 
 
     # Definição global do path para static
-    app = Flask(__name__, static_folder=r'openpdv\\static')
+    app = Flask(__name__, static_folder=r'C:\\Users\\krzgv\\OneDrive\\Área de Trabalho\\Projects\\Projeto Free PDV\\FreePDV\\freepdv\\static')
 
     # Distribuição da instancia do app principal
     config.init_app(app)

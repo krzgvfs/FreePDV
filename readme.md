@@ -63,6 +63,12 @@ Fornecer uma ferramenta simples e gratuita, eficiente e customizável para comer
     Acessivel por padrão em **http://127.0.0.1:5000** ou **http://localhost:5000**.
 
 ---
+## 💻 **Interface**
+**Login**
+
+![Texto Alternativo](Screenshots/login_screen.png)
+
+---
 ## ☕ **Pague-me um Café**
 Se este projeto foi útil para você e você gostaria de apoiar o desenvolvimento contínuo, considere pagar-me um café! Sua contribuição ajuda a manter o projeto atualizado e melhora ainda mais as funcionalidades. 🥳
 - **Wallet**: 0x0dF5920055D620D12B1bD5cb4E367d38c5057713

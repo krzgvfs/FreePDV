@@ -28,7 +28,13 @@
         <div class="row mt-4 full-height d-flex justify-content-center text-center">
             <!-- Image -->
             <div class="col-lg-8 d-none d-lg-block jus">
-                <img style="user-select: none;" src="/freepdv/static/src/undraw_in_thought_re_qyxl.svg" alt="" width="500" height="500">
+                <img 
+                style="user-select: none;" 
+                src="{{ url_for('static', filename='src/undraw_in_thought_re_qyxl.svg') }}" 
+                alt=""
+                width="500" 
+                height="500"
+                />
             </div>
             <!-- Form -->
             <div class="col-9 col-lg-4 d-flex justify-content-center text-center border rounded-3" >
@@ -38,7 +44,7 @@
                     <div class="mb-3">
                         <div class="input-group" style="width: 300px;">
                           <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                          <input type="email" class="form-control" placeholder="Email or login" name="">
+                          <input type="email" class="form-control" placeholder="E-mail" name="">
                         </div>
                     </div>
                     <div class="mb-3">
