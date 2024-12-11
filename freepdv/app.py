@@ -1,10 +1,13 @@
 from flask import Flask
 from flask_session import Session
+from dotenv import load_dotenv
 
-from openpdv.extensions import config
-from openpdv.blueprints.webui import webui_bp
+from freepdv.extensions import config
+from freepdv.blueprints.webui import webui_bp
 
 def create_app():
+
+    load_dotenv() 
 
     # Definição global do path para static
     app = Flask(__name__, static_folder=r'openpdv\\static')
