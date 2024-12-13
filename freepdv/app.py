@@ -1,19 +1,26 @@
 from flask import Flask
 from flask_session import Session
-from dotenv import load_dotenv
 
 from freepdv.extensions import config
+from freepdv.extensions import auth
+from freepdv.extensions.database import db
+
 from freepdv.blueprints.webui import webui_bp
 
-def create_app():
 
-    load_dotenv() 
+def create_app():
 
     # Definição global do path para static
     app = Flask(__name__, static_folder=r'C:\\Users\\krzgv\\OneDrive\\Área de Trabalho\\Projects\\Projeto Free PDV\\FreePDV\\freepdv\\static')
 
+    app.secret_key = 'admin'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Boa prática para evitar avisos
+
     # Distribuição da instancia do app principal
     config.init_app(app)
+    db.init_app(app)
+    auth.init_app(app)
 
     # Configuração do tipo de sessão
     app.config["SESSION_TYPE"] = "filesystem"
