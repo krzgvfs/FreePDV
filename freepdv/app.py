@@ -1,12 +1,10 @@
 from flask import Flask
 from flask_session import Session
 
-from freepdv.extensions import config
-from freepdv.extensions import auth
+from freepdv.extensions import config, auth 
 from freepdv.extensions.database import db
 
 from freepdv.blueprints.webui import webui_bp
-
 
 def create_app():
 
@@ -28,6 +26,9 @@ def create_app():
     # Configura a sessão com Flask-Session
     Session(app)
     
+    with app.app_context(): 
+        db.create_all()
+
     # Registra o blueprint
     app.register_blueprint(webui_bp)
     

@@ -1,6 +1,7 @@
 from flask_login import UserMixin
 from freepdv.extensions.database import db
 
+
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
 
