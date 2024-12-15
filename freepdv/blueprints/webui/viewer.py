@@ -11,10 +11,10 @@ from freepdv.models import User
 def index():
     return render_template('index.html')
 
-@webui_bp.route('/registrar', methods=['GET', 'POST'])
-def registrar():
+@webui_bp.route('/register', methods=['GET', 'POST'])
+def register():
     if request.method == 'GET':
-        return render_template('registrar.html')
+        return render_template('register.html')
     elif request.method == 'POST':
         nome = request.form['nomeForm']
         senha = request.form['senhaForm']
