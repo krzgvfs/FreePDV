@@ -9,7 +9,7 @@ from freepdv.blueprints.webui import webui_bp
 def create_app():
 
     # Definição global do path para static
-    app = Flask(__name__, static_folder=r'C:\\Users\\krzgv\\OneDrive\\Área de Trabalho\\Projects\\Projeto Free PDV\\FreePDV\\freepdv\\static')
+    app = Flask(__name__, static_folder=r'C:\\Users\\krzgv\\OneDrive\\Área de Trabalho\\Projetos\\Projeto Free PDV\\FreePDV\\freepdv\\static')
 
     app.secret_key = 'admin'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
