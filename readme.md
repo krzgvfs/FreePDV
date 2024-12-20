@@ -75,6 +75,8 @@ Meu objetivo com o FreePDV é criar uma ferramenta completa e gratuita para come
 **Login**
 
 ![Capitura de tela Login](Screenshots/login_screen.png)
+
+**Inicio**
 ![Capitura de tela vendas](Screenshots/vendas_screen.png)
 
 ---
