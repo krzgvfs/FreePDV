@@ -1,0 +1,41 @@
+
+<!-- Sessões da pagina -->
+<div class="col">
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Menu 01</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">Menu 02</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#">Menu 03</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Menu 04</a>
+    </li>
+</ul>
+<!-- Corpo de informações -->
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Código</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Preço</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in range(10) %}
+    <tr>
+        <th scope="row">Tênis Stratus Oakley</th>
+        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+        <td>001</td>
+        <td>Tênis</td>
+        <td>R$ 380,00</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>

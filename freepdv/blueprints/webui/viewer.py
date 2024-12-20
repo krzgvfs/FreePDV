@@ -49,3 +49,44 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('webui.login'))
+
+
+@webui_bp.route('/vendas')
+@login_required
+def vendas():
+    return render_template('vendas.html')
+
+@webui_bp.route('/home')
+@login_required
+def home():
+    return render_template('home.html')
+
+@webui_bp.route('/caixas')
+@login_required
+def caixas():
+    return render_template('caixas.html')
+
+@webui_bp.route('/estatistica')
+@login_required
+def estatistica():
+    return render_template('estatistica.html')
+
+@webui_bp.route('/estoques')
+@login_required
+def estoques():
+    return render_template('estoques.html')
+
+@webui_bp.route('/produtos')
+@login_required
+def produtos():
+    return render_template('produtos.html')
+
+@webui_bp.route('/usuarios')
+@login_required
+def usuarios():
+    return render_template('usuarios.html')
+
+@webui_bp.route('/pdv')
+@login_required
+def pdv():
+    return render_template('pdv.html')
