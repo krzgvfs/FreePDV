@@ -58,6 +58,11 @@
                   <i class="bi bi-shop-window"></i> Produtos
                 </a>
               </li>
+              <li class="nav-item mt-2">
+                <a href="#" class="nav-link link-body-emphasis" data-url="{{ url_for('webui.combo') }}" onclick="loadContent(this)">
+                  <i class="bi bi-minecart-loaded"></i> Combo
+                </a>
+              </li>
               <li class="nav-item mt-2">  <!-- Estoques -->
                 <a href="#" class="nav-link link-body-emphasis" data-url="{{ url_for('webui.estoques') }}" onclick="loadContent(this)" >
                   <i class="bi bi-archive"></i> Estoques

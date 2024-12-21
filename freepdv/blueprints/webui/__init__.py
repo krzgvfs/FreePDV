@@ -8,7 +8,7 @@ webui_bp = Blueprint(
     )
 
 # Importação das rotas
-from .viewer import index, login, register, logout, vendas, caixas, estatistica, estoques, home, produtos, usuarios, pdv
+from .viewer import index, login, register, logout, vendas, caixas, estatistica, estoques, home, produtos, usuarios, pdv, combo
 
 # Registro das rotas
 webui_bp.add_url_rule("/", view_func=index)
@@ -23,3 +23,4 @@ webui_bp.add_url_rule("/home", view_func=home)
 webui_bp.add_url_rule("/produtos", view_func=produtos)
 webui_bp.add_url_rule("/usuarios", view_func=usuarios)
 webui_bp.add_url_rule("/pdv", view_func=pdv)
+webui_bp.add_url_rule("/combo", view_func=combo)

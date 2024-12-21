@@ -90,3 +90,8 @@ def usuarios():
 @login_required
 def pdv():
     return render_template('pdv.html')
+
+@webui_bp.route('/combo')
+@login_required
+def combo():
+    return render_template('combo.html')
