@@ -1,11 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Home
-</body>
-</html>
+<div class="dashboard">
+    <div class="row">
+        <!-- Resumo das Vendas -->
+        <div class="col-md-4">
+            <h5>Total de Vendas do Dia</h5>
+            <p>R$ 5.000,00</p>
+            <canvas id="salesPerHour"></canvas>
+        </div>
+        
+        <!-- Status do Caixa -->
+        <div class="col-md-4">
+            <h5>Saldo Atual do Caixa</h5>
+            <p>R$ 1.200,00</p>
+            <p>Entradas: R$ 500,00</p>
+            <p>Saídas: R$ 100,00</p>
+        </div>
+        
+        <!-- Produtos Mais Vendidos -->
+        <div class="col-md-4">
+            <h5>Produtos Mais Vendidos</h5>
+            <ul>
+                <li>Produto A - 100 unidades</li>
+                <li>Produto B - 80 unidades</li>
+                <li>Produto C - 50 unidades</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Clientes Frequentes -->
+        <div class="col-md-4">
+            <h5>Clientes Frequentes</h5>
+            <ul>
+                <li>Cliente X</li>
+                <li>Cliente Y</li>
+                <li>Cliente Z</li>
+            </ul>
+        </div>
+        
+        <!-- Desempenho e Metas -->
+        <div class="col-md-4">
+            <h5>Desempenho Diário</h5>
+            <canvas id="performanceVsGoals"></canvas>
+        </div>
+        
+        <!-- Alertas e Notificações -->
+        <div class="col-md-4">
+            <h5>Alertas</h5>
+            <p>Estoque baixo para Produto D</p>
+            <p>Promoção: 20% off no Produto E</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Relatórios Rápidos -->
+        <div class="col-md-4">
+            <h5>Relatórios</h5>
+            <button class="btn btn-primary">Fechamento de Caixa</button>
+            <button class="btn btn-secondary">Vendas Semanais</button>
+        </div>
+        
+        <!-- Atalhos para Funções Comuns -->
+        <div class="col-md-4">
+            <h5>Funções Rápidas</h5>
+            <button class="btn btn-success">Nova Venda</button>
+            <button class="btn btn-info">Consultar Estoque</button>
+        </div>
+    </div>
+</div>

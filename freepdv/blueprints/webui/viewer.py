@@ -50,7 +50,6 @@ def logout():
     logout_user()
     return redirect(url_for('webui.login'))
 
-
 @webui_bp.route('/vendas')
 @login_required
 def vendas():
