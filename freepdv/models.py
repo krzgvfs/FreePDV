@@ -16,4 +16,4 @@ class Products(db.Model):
     nome = db.Column(db.String(30), unique=True)
     description = db.Column(db.String(100))
     preco = db.Column(db.String(10))
-
+    custo = db.Column(db.String(10))

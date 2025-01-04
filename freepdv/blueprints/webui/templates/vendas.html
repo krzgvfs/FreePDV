@@ -1,24 +1,38 @@
+<div class="row">
+    <div class="col">
+        <nav class="nav p-3 d-flex flex-row">
+            <div class="col">
+                <a href="#" type="button" class="btn btn-outline-danger me-1">Cancelar venda</a>
+            </div>
+            <div class="col-4">
+                <!-- Navbar -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</div>
 
 <!-- Sessões da pagina -->
 <div class="col">
-<ul class="nav nav-tabs">
+<ul class="nav m-3 nav-tabs">
     <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Menu 01</a>
+    <a class="nav-link active" aria-current="page" href="#">Caixa atual</a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" href="#">Menu 02</a>
+    <a class="nav-link" href="#">Ultimo caixa</a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" href="#">Menu 03</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Menu 04</a>
+    <a class="nav-link" href="#">Penultimo caixa</a>
     </li>
 </ul>
 <!-- Corpo de informações -->
 <table class="table table-striped">
     <thead>
     <tr>
+        <th scope="col">#</th>
         <th scope="col">Nome</th>
         <th scope="col">Descrição</th>
         <th scope="col">Código</th>
@@ -28,13 +42,16 @@
     </thead>
     <tbody>
     {% for i in range(10) %}
-    <tr>
-        <th scope="row">Tênis Stratus Oakley</th>
-        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
-        <td>001</td>
-        <td>Tênis</td>
-        <td>R$ 380,00</td>
-    </tr>
+        <tr>
+            <td>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            </td>
+            <th scope="row">Tênis Stratus Oakley</th>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</td>
+            <td>001</td>
+            <td>Tênis</td>
+            <td>R$ 380,00</td>
+        </tr>
     {% endfor %}
     </tbody>
 </table>

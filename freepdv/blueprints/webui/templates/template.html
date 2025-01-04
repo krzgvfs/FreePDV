@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid min-height">
       <div class="row">
-        <div class="col d-flex">
+        <div class="col d-flex p-0">
           <!-- Sidebar-->
           <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary min-height" style="width: 280px;">
             <!-- Logo FreePDV-->
@@ -49,7 +49,7 @@
                 </a>
               </li>
               <li class="nav-item mt-2"> <!-- Clientes -->
-                <a href="#" class="nav-link link-body-emphasis" data-url="{{ url_for('webui.vendas') }}" onclick="loadContent(this)">
+                <a href="#" class="nav-link link-body-emphasis" data-url="{{ url_for('webui.usuarios') }}" onclick="loadContent(this)">
                   <i class="bi bi-people"></i> Clientes
                 </a>
               </li>
@@ -58,7 +58,7 @@
                   <i class="bi bi-shop-window"></i> Produtos
                 </a>
               </li>
-              <li class="nav-item mt-2">
+              <li class="nav-item mt-2"> <!-- Combos -->
                 <a href="#" class="nav-link link-body-emphasis" data-url="{{ url_for('webui.combo') }}" onclick="loadContent(this)">
                   <i class="bi bi-minecart-loaded"></i> Combo
                 </a>
@@ -92,18 +92,8 @@
           <!-- Body Content -->
           <div class="row-cols-1" style="width: 100%;">
               <!-- Titulo -->
-              <div class="col pt-4 pb-4 ps-2">
-                <h2>Seja bem vindo!</h2>
-                
-                <nav class="nav pt-2 d-flex justify-content-between">
-                  <a href="/pdv" type="button" class="btn btn-outline-primary">Nova Venda</a>
-                    
-                  <!-- Navbar -->
-                  <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-                  </form>
-                </nav>
+              <div class="col p-4 pb-0">
+                <h2>Olá, Marcos Santos!</h2>
               </div>
 
               <!-- Main Content -->

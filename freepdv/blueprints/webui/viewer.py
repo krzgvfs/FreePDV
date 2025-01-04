@@ -8,8 +8,8 @@ from freepdv.models import User
 
 @webui_bp.route('/')
 @login_required
-def index():
-    return render_template('index.html')
+def template():
+    return render_template('template.html')
 
 @webui_bp.route('/register', methods=['GET', 'POST'])
 def register():
@@ -25,7 +25,7 @@ def register():
 
         login_user(novo_usuario)
 
-    return redirect(url_for('webui.index'))
+    return redirect(url_for('webui.template'))
 
 @webui_bp.route('/login', methods=['GET','POST'])
 def login():
@@ -42,7 +42,7 @@ def login():
 
         login_user(user)
 
-        return redirect(url_for('webui.index'))
+        return redirect(url_for('webui.template'))
 
 @webui_bp.route('/logout')
 @login_required
